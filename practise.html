@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1 id="value">0</h1>
+
+  <button id="btton1">button 1</button>
+  <button id="btton2">button 2</button>
+  <button id="btton3">button 3</button>
+
+  <script>
+
+     function getvalue(num){
+      const h1 = document.getElementById('value')
+       h1.innerText = num;
+     }
+ 
+    document.getElementById('btton1').addEventListener('click', function(){
+      // const h1 = document.getElementById('value')
+      //  h1.innerText = "1" 
+      getvalue("1")
+    })
+ document.getElementById('btton2').addEventListener('click', function(){
+      // const h1 = document.getElementById('value')
+      //  h1.innerText = "2" 
+       getvalue("2")
+    })
+
+
+     document.getElementById('btton3').addEventListener('click', function(){
+      // const h1 = document.getElementById('value')
+      //  h1.innerText = "3"  
+       getvalue("3")
+    })
+
+
+
+
+  </script>
+  
+</body>
+</html>
